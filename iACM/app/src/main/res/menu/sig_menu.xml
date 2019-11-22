@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" android:layout_height="300dp" android:layout_width="300dp">
+    <item
+        android:id="@+id/one"
+        android:title="Sanganitra" />
+    <item
+        android:id="@+id/two"
+        android:title="Vidyut"/>
+    <item
+        android:id="@+id/three"
+        android:title="Yantrika"/>
+    <item
+        android:id="@+id/four"
+        android:title="Kaaryavarta" />
+    <item
+        android:id="@+id/five"
+        android:title="Saahitya"/>
+    <item
+        android:id="@+id/six"
+        android:title="Media"/>
+    <item
+        android:id="@+id/seven"
+        android:title="General"/>
+
+</menu>

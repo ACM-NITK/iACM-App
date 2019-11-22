@@ -1,2 +1,3 @@
 # iACM-App
-The official android application for ACM NITK  Chapter
+
+Official App of ACM NITK Chaper.

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_person_outline_black_24dp"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_leader_board"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Leaderboard" />
+        <item
+            android:id="@+id/nav_events"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Events" />
+        <item
+            android:id="@+id/nav_images"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Gallery" />
+        <item
+            android:id="@+id/nav_projects"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Projects" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="About iACM" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_contacts"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Contacts" />
+
+        </menu>
+    </item>
+
+</menu>

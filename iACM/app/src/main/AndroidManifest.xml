@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.NITK.ACM.iACM"
+    android:versionCode="2"
+    android:versionName="1.1">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:alwaysRetainTaskState="true"
+        android:icon="@drawable/acm_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/acm_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".Attendeesfig"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".Figleaderboard" />
+        <activity android:name=".FigEvents" />
+        <activity
+            android:name=".Figlogin"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Separatelogin"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Fig_homepage"
+            android:label="@string/title_activity_fig_homepage"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Fig_profile" />
+        <activity android:name=".ProfileDisplay" />
+        <activity
+            android:name=".Poll"
+            android:label="@string/title_activity_poll"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoadingActivity"
+            android:label="@string/title_activity_loading"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HomePage"
+            android:label="iACM"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".events"
+            android:label="Events"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Projects"
+            android:label="Projects" />
+        <activity
+            android:name=".About"
+            android:label="About" />
+        <activity
+            android:name=".Contacts"
+            android:label="Contacts" />
+        <activity
+            android:name=".Meetings"
+            android:label="Scheduled Meetings" />
+        <activity
+            android:name=".Images"
+            android:label="ACM Gallery" />
+        <activity android:name=".profile" />
+        <activity
+            android:name=".SignUpActivity"
+            android:label="Sign-Up"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="Log In"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ResetPasswordActivity"
+            android:label="Reset Password"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AdminPortal"
+            android:label="@string/title_activity_admin_portal"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".LeaderBoard"
+            android:label="Leaderboard" />
+        <activity
+            android:name=".Attendees"
+            android:label="@string/title_activity_attendees"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MemberConnectActivity"
+            android:label="Member Connect"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".UserDetailsActivity"
+            android:label="Member Connect"
+            android:theme="@style/AppTheme" />
+
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+            <!--
+     Set custom default icon. This is used when no icon is set for incoming notification messages.
+     See README(https://goo.gl/l4GJaQ) for more.
+            -->
+            <meta-data
+                android:name="com.google.firebase.messaging.default_notification_icon"
+                android:resource="@drawable/acm_logo" />
+            <!--
+                 Set color used with incoming notification messages. This is used when no color is set for the incoming
+                 notification message. See README(https://goo.gl/6BKBk7) for more.
+            -->
+            <meta-data
+                android:name="com.google.firebase.messaging.default_notification_color"
+                android:resource="@color/colorAccent" />
+        </service>
+    </application>
+
+</manifest>
